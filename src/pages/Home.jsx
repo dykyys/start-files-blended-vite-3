@@ -1,11 +1,22 @@
-import { Container, Heading, Section } from 'components';
+import { Container, CountryList, Section } from 'components';
+import { useEffect, useState } from 'react';
+import { getCountries } from 'service/countryApi';
 
-export const Home = () => {
+const Home = () => {
+  const [countries, setCountries] = useState([]);
+  useEffect(() => {
+    getCountries().then(countries => {
+      setCountries(countries);
+    });
+  }, []);
+
   return (
     <Section>
       <Container>
-        <Heading title="Home" bottom />
+        <CountryList countries={countries} />
       </Container>
     </Section>
   );
 };
+
+export default Home;
