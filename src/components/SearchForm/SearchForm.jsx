@@ -25,7 +25,6 @@ export const SearchForm = ({ onSubmit }) => {
     if (!region) {
       return;
     }
-
     onSubmit(region);
   }
 

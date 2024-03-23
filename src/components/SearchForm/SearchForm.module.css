@@ -42,7 +42,6 @@
   color: #fff;
 
   cursor: pointer;
-  appearance: none;
 }
 .select option:first-of-type {
   color: var(--color-light);
