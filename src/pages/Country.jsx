@@ -25,9 +25,11 @@ const Country = () => {
 
   return (
     <Section>
-      <GoBackBtn to={goBackLink} />
-      <Container>{countryValue && <CountryInfo {...countryValue} />}</Container>
-      {isLoading && <Loader />}
+      <Container>
+        <GoBackBtn to={goBackLink} />
+        {countryValue && <CountryInfo {...countryValue} />}
+        {isLoading && <Loader />}
+      </Container>
     </Section>
   );
 };
