@@ -1,4 +1,4 @@
-import { Container, CountryList, Heading, Section } from 'components';
+import { Container, CountryList, Section } from 'components';
 import { useEffect, useState } from 'react';
 import { getCountries } from 'service/countryApi';
 
