@@ -1,7 +1,7 @@
 export const transformCountriesData = data => {
   return data.map(
     ({ name: { common }, capital, flags, population, languages }) => ({
-      id: common,
+      id: common.toLowerCase(),
       country: common,
       flag: flags.png,
       capital,
