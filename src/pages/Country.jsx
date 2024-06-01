@@ -1,10 +1,18 @@
-import { Container, Heading, Section } from 'components';
+import { Container, GoBackBtn, GoBackBtn2, Heading, Section } from 'components';
+import { useLocation, useParams } from 'react-router-dom';
 
 export const Country = () => {
+
+  const {
+    countryId,
+  } = useParams();
+  
+
   return (
     <Section>
       <Container>
-        <Heading title="SearchCountry" bottom />
+        <GoBackBtn />
+        <GoBackBtn2/>
       </Container>
     </Section>
   );
