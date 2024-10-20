@@ -1,6 +1,6 @@
 import { Container, Heading, Section } from 'components';
 
-export const Country = () => {
+const Country = () => {
   return (
     <Section>
       <Container>
@@ -9,3 +9,5 @@ export const Country = () => {
     </Section>
   );
 };
+
+export default Country;
