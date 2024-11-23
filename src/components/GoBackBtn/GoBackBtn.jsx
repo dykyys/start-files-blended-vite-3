@@ -9,7 +9,7 @@ export const GoBackBtn = () => {
 
   return (
     <Link to={backLink.current} className={s.link}>
-      Go Back
+      Go Back 👍
     </Link>
   );
 };
