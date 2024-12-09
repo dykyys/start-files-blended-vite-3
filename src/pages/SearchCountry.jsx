@@ -1,6 +1,8 @@
-import { Container, Heading, Section } from 'components';
+import Container from '../components/Container/Container';
+import Heading from '../components/Heading/Heading';
+import Section from '../components/Section/Section';
 
-export const SearchCountry = () => {
+const SearchCountry = () => {
   return (
     <Section>
       <Container>
@@ -9,3 +11,5 @@ export const SearchCountry = () => {
     </Section>
   );
 };
+
+export default SearchCountry;

@@ -3,7 +3,8 @@ import { FaFlagUsa } from 'react-icons/fa';
 
 import styles from './Header.module.css';
 
-export const Header = () => {
+const Header = () => {
+  const addActive = ({ isActive }) => (isActive ? styles.active : styles.link);
   return (
     <>
       <header className={styles.header}>
@@ -13,22 +14,12 @@ export const Header = () => {
           <nav>
             <ul className={styles.nav}>
               <li>
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    isActive ? styles.active : styles.link
-                  }
-                >
+                <NavLink to="/" className={addActive}>
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink
-                  to="/country"
-                  className={({ isActive }) =>
-                    isActive ? styles.active : styles.link
-                  }
-                >
+                <NavLink to="/country" className={addActive}>
                   Countries
                 </NavLink>
               </li>
@@ -39,3 +30,5 @@ export const Header = () => {
     </>
   );
 };
+
+export default Header;

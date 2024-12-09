@@ -6,7 +6,7 @@
 // population,
 // }
 
-export const CountryInfo = () => {
+const CountryInfo = () => {
   return (
     <h2>CountryInfo</h2>
     // <div className={styles.wrapper}>
@@ -34,3 +34,5 @@ export const CountryInfo = () => {
     // </div>
   );
 };
+
+export default CountryInfo;

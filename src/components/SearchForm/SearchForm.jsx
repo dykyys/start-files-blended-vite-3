@@ -8,6 +8,8 @@
 //   { id: 'oceania', value: 'oceania', name: 'Oceania' },
 // ];
 
-export const SearchForm = () => {
+const SearchForm = () => {
   return <h2>SearchForm</h2>;
 };
+
+export default SearchForm;
