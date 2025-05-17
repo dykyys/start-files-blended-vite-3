@@ -6,7 +6,7 @@ const Country = () => {
   return (
     <Section>
       <Container>
-        <Heading title="SearchCountry" bottom />
+        <Heading title="Country" bottom />
       </Container>
     </Section>
   );
